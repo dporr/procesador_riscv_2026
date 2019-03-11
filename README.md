@@ -1,2 +1,1 @@
-# proj2_logisim_cpu
-CPU
+# Project 2: CPU
