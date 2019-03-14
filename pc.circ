@@ -57,39 +57,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="60" x="20" y="20"/>
       <path d="M65,119 Q70,108 75,119" fill="none" stroke="#ff0000" stroke-width="2"/>
       <text font-family="Dialog" font-size="12" font-weight="bold" text-anchor="middle" x="54" y="75">PC</text>
-      <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="43" y="43">Enable</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="33" y="73">In</text>
-      <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="37" y="113">RST</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="69" y="110">Clk</text>
       <circ-port height="8" pin="140,70" width="8" x="16" y="66"/>
-      <circ-port height="8" pin="80,150" width="8" x="16" y="36"/>
       <circ-port height="8" pin="80,180" width="8" x="66" y="116"/>
-      <circ-port height="8" pin="80,210" width="8" x="16" y="106"/>
       <circ-port height="10" pin="260,70" width="10" x="75" y="65"/>
       <circ-anchor facing="east" height="6" width="6" x="77" y="67"/>
     </appear>
+    <wire from="(170,80)" to="(170,160)"/>
     <wire from="(80,180)" to="(190,180)"/>
-    <wire from="(170,80)" to="(170,150)"/>
     <wire from="(170,80)" to="(180,80)"/>
-    <wire from="(80,150)" to="(170,150)"/>
+    <wire from="(200,100)" to="(210,100)"/>
     <wire from="(190,90)" to="(190,180)"/>
-    <wire from="(80,210)" to="(200,210)"/>
+    <wire from="(200,90)" to="(200,100)"/>
     <wire from="(140,70)" to="(180,70)"/>
-    <wire from="(200,90)" to="(200,210)"/>
+    <wire from="(130,160)" to="(170,160)"/>
     <wire from="(210,70)" to="(260,70)"/>
-    <comp lib="0" loc="(140,70)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Input"/>
-    </comp>
     <comp lib="0" loc="(80,180)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Clk"/>
     </comp>
-    <comp lib="0" loc="(80,210)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Reset"/>
-    </comp>
+    <comp lib="0" loc="(210,100)" name="Ground"/>
     <comp lib="0" loc="(260,70)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -101,9 +89,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="PC"/>
     </comp>
-    <comp lib="0" loc="(80,150)" name="Pin">
+    <comp lib="0" loc="(140,70)" name="Pin">
+      <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Enable"/>
+      <a name="label" val="Input"/>
     </comp>
+    <comp lib="0" loc="(130,160)" name="Constant"/>
   </circuit>
 </project>
