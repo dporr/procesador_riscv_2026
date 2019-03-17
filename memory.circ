@@ -63,7 +63,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <text font-family="Dialog" font-size="12" font-weight="bold" text-anchor="middle" x="97" y="38">Memory</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="36" y="53">Address</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="70" y="120">Clk</text>
-      <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="45" y="73">Write Enable</text>
+      <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="42" y="73">Write Data</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="34" y="93">Data In</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="113" y="68">Read</text>
       <text font-family="Dialog" font-size="8" font-weight="bold" text-anchor="middle" x="112" y="77">Data</text>
@@ -88,29 +88,33 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(150,160)" to="(190,160)"/>
     <wire from="(230,70)" to="(270,70)"/>
     <wire from="(260,130)" to="(300,130)"/>
-    <comp lib="0" loc="(260,130)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WE"/>
-    </comp>
-    <comp lib="0" loc="(230,70)" name="Bit Extender">
-      <a name="in_width" val="32"/>
-      <a name="out_width" val="24"/>
-    </comp>
-    <comp lib="0" loc="(320,120)" name="Constant">
-      <a name="facing" val="north"/>
-    </comp>
     <comp lib="0" loc="(150,160)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Data"/>
     </comp>
-    <comp lib="0" loc="(360,120)" name="Constant">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(230,70)" name="Bit Extender">
+      <a name="in_width" val="32"/>
+      <a name="out_width" val="24"/>
     </comp>
     <comp lib="4" loc="(410,70)" name="RAM">
       <a name="addrWidth" val="24"/>
       <a name="dataWidth" val="32"/>
       <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(340,150)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clk"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(360,120)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(380,120)" name="Ground"/>
+    <comp lib="0" loc="(260,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WE"/>
     </comp>
     <comp lib="0" loc="(430,70)" name="Pin">
       <a name="facing" val="west"/>
@@ -119,12 +123,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Out"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(380,120)" name="Ground"/>
-    <comp lib="0" loc="(340,150)" name="Pin">
+    <comp lib="0" loc="(320,120)" name="Constant">
       <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Clk"/>
-      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(150,70)" name="Pin">
       <a name="width" val="32"/>
