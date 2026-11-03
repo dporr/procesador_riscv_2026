@@ -13,7 +13,7 @@ import math
 if python_version_tuple() >= ("3", "3", "0"):
     from collections.abc import Iterable
 else:
-    from collections import Iterable
+    from collections.abc import Iterable
 
 if python_version_tuple()[0] < "3":
     from itertools import izip_longest
