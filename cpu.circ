@@ -303,6 +303,7 @@
     <wire from="(30,590)" to="(30,1450)"/>
     <wire from="(1180,1750)" to="(1230,1750)"/>
     <wire from="(450,1510)" to="(490,1510)"/>
+    <wire from="(800,680)" to="(820,680)"/>
     <wire from="(460,490)" to="(490,490)"/>
     <wire from="(600,1040)" to="(620,1040)"/>
     <wire from="(650,1240)" to="(680,1240)"/>
@@ -1005,9 +1006,6 @@
       <a name="width" val="5"/>
       <a name="label" val="opcode"/>
     </comp>
-    <comp lib="0" loc="(960,1480)" name="Tunnel">
-      <a name="label" val="ir_type"/>
-    </comp>
     <comp lib="6" loc="(1225,1196)" name="Text">
       <a name="text" val="Señal de control elegida, va a ALU"/>
     </comp>
@@ -1016,7 +1014,7 @@
     </comp>
     <comp lib="0" loc="(610,540)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="ir_type"/>
+      <a name="label" val="rb_type"/>
     </comp>
     <comp lib="2" loc="(140,1630)" name="Decoder">
       <a name="select" val="5"/>
@@ -1399,7 +1397,7 @@
     </comp>
     <comp lib="0" loc="(680,660)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="i_type"/>
+      <a name="label" val="r_type"/>
     </comp>
     <comp lib="6" loc="(152,915)" name="Text">
       <a name="text" val="5: bits 20-23 rs2"/>
@@ -1416,6 +1414,7 @@
     <comp lib="6" loc="(257,736)" name="Text">
       <a name="text" val="rtype"/>
     </comp>
+    <comp lib="1" loc="(800,680)" name="NOT Gate"/>
     <comp lib="0" loc="(750,880)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="imm_s"/>
@@ -1499,14 +1498,14 @@
       <a name="out_width" val="32"/>
       <a name="type" val="sign"/>
     </comp>
+    <comp lib="0" loc="(820,680)" name="Tunnel">
+      <a name="label" val="rb_type"/>
+    </comp>
     <comp lib="6" loc="(105,1206)" name="Text">
       <a name="text" val="jtype"/>
     </comp>
     <comp lib="6" loc="(375,841)" name="Text">
       <a name="text" val="stype"/>
-    </comp>
-    <comp lib="0" loc="(770,680)" name="Tunnel">
-      <a name="label" val="ir_type"/>
     </comp>
     <comp lib="0" loc="(500,730)" name="Tunnel">
       <a name="width" val="32"/>
